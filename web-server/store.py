@@ -4,7 +4,8 @@ import requests
 def get_categories():
 
    # Realizar una solicitud GET a la URL proporcionada y guardar la respuesta en la variable r
-   r = requests.get('https://api.escuelajs.co/api/v1/categories')
+   #https://fakeapi.platzi.com/
+   r = requests.get('https://api.escuelajs.co/api/v1/users')
 
    # Imprimir el código de estado HTTP de la respuesta
    print(r.status_code)
@@ -22,4 +23,4 @@ def get_categories():
    for category in category:
 
        # Imprimir el valor del campo 'name' de cada categoría en el objeto JSON
-       print(category['name'])
+       print(category['email'])

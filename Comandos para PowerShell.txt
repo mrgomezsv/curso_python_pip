@@ -1,0 +1,25 @@
+Hola Chicos! :D para los que usamos la PowerShell de Windows aqui les dejo algunos comandos
+
+
+Verificar donde esta python y pip
+pip3 --version
+
+Crear el ambiente virtual en Windows PowerShell
+python -m venv env
+
+Activar el ambiente en Windows PowerShell
+.\env\Scripts\Activate.ps1
+
+Desactivar o salir del ambiente Virtual
+deactivate
+
+pip install matplotlib==3.5.0
+Verificar las instalaciones
+
+pip freeze
+
+Generar el archivo requirements
+pip freeze > requirements.txt
+
+Instalar archivo requirements
+pip install -r requirements.txt

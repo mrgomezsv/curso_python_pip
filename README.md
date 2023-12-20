@@ -16,3 +16,21 @@ source env/bin/activate
 pip3 install -r requirements.txt
 python3 main.py
 ```
+
+# App Project in Docker
+```sh
+Para crear el contenedor
+docker compose build
+
+Para Correr el contenedor
+docker compose up -d
+
+Para verificar el contenedor
+docker compose ps
+
+Para ingresar al contenedor
+docker compose exec app-csv bash
+
+Para bajar la aplicacion
+docker compose down
+```

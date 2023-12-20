@@ -1,0 +1,12 @@
+# Define un servicio llamado 'app-csv'
+services:
+ app-csv:
+   # Configura el servicio para construir una imagen a partir de un Dockerfile
+   build:
+     # Define el contexto de la construcción, que es el conjunto de archivos que Docker puede acceder durante la construcción
+     context: .
+     # Especifica el Dockerfile que Docker debe usar para construir la imagen
+     dockerfile: Dockerfile
+     volumes:
+    # Mapea el directorio actual al directorio /app en el contenedor
+    - .:/app

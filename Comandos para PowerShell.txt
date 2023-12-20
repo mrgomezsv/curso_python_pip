@@ -23,3 +23,20 @@ pip freeze > requirements.txt
 
 Instalar archivo requirements
 pip install -r requirements.txt
+
+Comando de Docker
+
+Para crear el contenedor
+docker compose build
+
+Para Correr el contenedor
+docker compose up -d
+
+Para verificar el contenedor
+docker compose ps
+
+Para ingresar al contenedor
+docker compose exec app-csv bash
+
+Para bajar la aplicacion
+docker compose down

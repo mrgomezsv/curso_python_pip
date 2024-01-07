@@ -34,3 +34,11 @@ docker compose exec app-csv bash
 Para bajar la aplicacion
 docker compose down
 ```
+
+# Use API in Python
+```sh
+python -m venv env
+.\env\Scripts\activate
+pip3 install -r requirements.txt
+python main.py
+```
